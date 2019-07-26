@@ -11,8 +11,8 @@ html {
   font-size: 62.5%; /* Set the default font size to easy number to divide by (px/root size = rem) */
 
   scroll-behavior: smooth;
-  
-  background: $hero-bg-color no-repeat center center fixed; 
+
+  background: $hero-bg-color no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
