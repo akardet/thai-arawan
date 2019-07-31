@@ -1,0 +1,33 @@
+.section {
+  &-story {
+    grid-column: 1 / -1;
+    position: relative;
+  }
+}
+
+.story {
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 5vw);
+    height: 80vh;
+    background-color: #393E41;
+    border-radius: 4rem;
+  }
+  &-title {
+    grid-column: 3;
+  }
+
+  &-info {
+    position: absolute;
+    width: 40%;
+    min-width: 40rem;
+    max-width: 55rem;
+    top: 4rem;
+    right: .1rem;
+    background-color: #FFF;
+    grid-column: 9;
+    padding: 3rem;
+    color: #393E41;
+    border-radius: 4rem;
+  }
+}

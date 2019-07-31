@@ -1,14 +1,24 @@
-.section-about {
-  height: 40vh;
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 5vw);
+}
+
+.section-story {
+  grid-column: 3 / 19;
+
+  grid-template-columns: repeat(auto-fill, 5vw);
+  height: 80vh;
   // background-color: darkblue;
 }
 
 .section-recognition {
+  grid-column: 1 / -1;
   height: 40vh;
   // background-color: orangered;
 }
 
 .section-menu {
+  grid-column: 1 / -1;
   height: 40vh;
   // background-color: cyan;
 }

@@ -14,7 +14,7 @@ import "../sass/main.scss"
 const Layout = ({ children }) => {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <main>{children}</main>
       <footer>Footer</footer>
     </>
