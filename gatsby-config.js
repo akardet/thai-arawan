@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Thai Arawan`,
     siteUrl: "https://www.thaiarawan.com",
-    description: `Thai Arawan is a family owned and operated business since 2004. Located in Amarillo, Texas. `,
+    description: `Thai Arawan is a family owned and operated Thai Restaurant that has been serving delicious and authentic dishes since 2004. Located in Amarillo, Texas. `,
     author: `sam@nullui.co`,
   },
   plugins: [
@@ -18,6 +18,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-background-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
@@ -25,12 +26,8 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.SPACE_ID,
-        // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

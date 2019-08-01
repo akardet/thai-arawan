@@ -1,12 +1,28 @@
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import React from "react"
 
-const Navigation = ({ siteTitle }) => (
+const Image = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "ta-logo.png" }) {
+        childImageSharp {
+          fixed(width: 50) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+
+  return <Img fixed={data.file.childImageSharp.fixed} />
+}
+
+const Navigation = () => (
   <nav>
     <Link className="navigation-logo" to="/">
-      Thai Arawan
+      <Image />
     </Link>
-    <h3>คนดีอาหารที่ดี</h3>
     <ul>
       <li>
         <Link to="#menu">Menu</Link>

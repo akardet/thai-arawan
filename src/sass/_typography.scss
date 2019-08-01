@@ -1,3 +1,33 @@
 main {
-  font-family: $primary-font;
+  font-family: $heading-font;
+}
+
+.navigation {
+  &-logo {
+    font-family: $heading-font;
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: $heading-font-color;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+}
+
+nav {
+  font-family: $body-font;
+
+  & h3 {
+    color: $dark-color;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+  }
+
+  & a {
+    text-decoration: none;
+    color: $dark-color;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
 }

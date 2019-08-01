@@ -23,3 +23,42 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  display: inline-block;
+  border: none;
+  border-radius: .5rem;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: #FFAE42;
+  color: $dark-color;
+  font-family: inherit;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+
+  cursor: pointer;
+  text-align: center;
+
+  -moz-box-shadow:    2px 10px 13px -1px rgba(85, 85, 85, 0.205);
+  -webkit-box-shadow: 2px 10px 13px -1px rgba(85, 85, 85, 0.205);
+  box-shadow:         2px 10px 13px -1px rgba(85, 85, 85, 0.205);
+
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &:hover,
+  &:focus {
+    background: #FFA630;
+  }
+
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}

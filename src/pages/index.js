@@ -3,11 +3,12 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Hero from "../components/hero"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <header>Header</header>
+    <Hero />
     <section id="story" className="section-about">
       <Link to="/team/">Our Team</Link>
     </section>
